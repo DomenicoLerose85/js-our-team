@@ -52,16 +52,33 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 // stampa card nel DOM per ogni membro del team
 
-// for (i = 0; i < teamMembers.length; i++) {
-//      document.getElementsByClassName("team-card").innerHTML += `
-//          <div class="card-image">
-//              <img src="/img/angela-caroll-chief-editor.jpg"${teamMembers[i]["foto"]}">
-//              <div class="card-text">
-//                  <h3 class="card-title text-center">${teamMembers[i]["Nome"]}</h3>
-//                  <p class="card-text text-center fw-light">${teamMembers[i]["Ruolo"]}</p>
-//              </div>
-//          </div>`;
+for (i = 0; i < teamMembers.length; i++) {
+     document.getElementsByClassName("team-container")[0].innerHTML += `
+      <div class="team-container">
+            <div class"team-card">
+             <img src="img/wayne-barnett-founder-ceo.jpg"${teamMembers[0]["foto"]}">
+             <img src="img/angela-caroll-chief-editor.jpg"${teamMembers[1]["foto"]}">
+             <img src="img/walter-gordon-office-manager.jpg"${teamMembers[2]["foto"]}">
+             <img src="img/angela-lopez-social-media-manager.jpg"${teamMembers[3]["foto"]}">
+             <img src="img/scott-estrada-developer.jpg"${teamMembers[4]["foto"]}">
+             <img src="img/barbara-ramos-graphic-designer.jpg"${teamMembers[5]["foto"]}">
+             <div class="card-text">
+                 <h3 class="card-title text-center">${teamMembers[0]["nome"]}</h3>
+                 <h3 class="card-title text-center">${teamMembers[1]["nome"]}</h3>
+                 <h3 class="card-title text-center">${teamMembers[2]["nome"]}</h3>
+                 <h3 class="card-title text-center">${teamMembers[3]["nome"]}</h3>
+                 <h3 class="card-title text-center">${teamMembers[4]["nome"]}</h3>
+                 <h3 class="card-title text-center">${teamMembers[5]["nome"]}</h3>
+                 <p class="card-text text-center fw-light">${teamMembers[0]["ruolo"]}</p>
+                 <p class="card-text text-center fw-light">${teamMembers[1]["ruolo"]}</p>        
+                 <p class="card-text text-center fw-light">${teamMembers[2]["ruolo"]}</p>
+                 <p class="card-text text-center fw-light">${teamMembers[3]["ruolo"]}</p>
+                 <p class="card-text text-center fw-light">${teamMembers[4]["ruolo"]}</p>
+                 <p class="card-text text-center fw-light">${teamMembers[5]["ruolo"]}</p>
+             </div>
+            </div> 
+      </div>`;
     
-// }
+}
 
   
