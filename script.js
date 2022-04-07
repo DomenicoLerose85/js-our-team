@@ -6,7 +6,7 @@
 
 // array con object contenente dati dei componenti del team
 
-let teamMeambers = [
+let teamMembers = [
     {
         'nome': 'Wayne Barnett',
         'ruolo': 'Founder & CEO',
@@ -39,16 +39,29 @@ let teamMeambers = [
     }
 
 ];
-console.log(teamMeambers);
+console.log(teamMembers);
 
 // funzione per stampare i membri del team nel console log 
 
-for (let i = 0; i < teamMeambers.length; i++) {
-    for (const key in teamMeambers[i]) {
-        console.log(`${key}:  ${teamMeambers[i][key]}`)
+for (let i = 0; i < teamMembers.length; i++) {
+    for (const key in teamMembers[i]) {
+        console.log(`${key}:  ${teamMembers[i][key]}`)
         
     };
 };
 
-// stampa card per ogni membro del team
+// stampa card nel DOM per ogni membro del team
 
+// for (i = 0; i < teamMembers.length; i++) {
+//      document.getElementsByClassName("team-card").innerHTML += `
+//          <div class="card-image">
+//              <img src="/img/angela-caroll-chief-editor.jpg"${teamMembers[i]["foto"]}">
+//              <div class="card-text">
+//                  <h3 class="card-title text-center">${teamMembers[i]["Nome"]}</h3>
+//                  <p class="card-text text-center fw-light">${teamMembers[i]["Ruolo"]}</p>
+//              </div>
+//          </div>`;
+    
+// }
+
+  
